@@ -43,6 +43,7 @@ class SequentialBytesReader {
         // TODO uudashr: we can do some improvement here
         int i = cursor;
         while (bytes[i++] != (byte)0) {
+        	if(i == bytes.length) break;
         }
         int length = i - 1 - cursor;
         if (length == 0) {
@@ -62,6 +63,7 @@ class SequentialBytesReader {
         // TODO uudashr: we can do some improvement here
         int i = cursor;
         while (bytes[i++] != (byte)0) {
+        	if(i == bytes.length) break;
         }
         int length = i - 1 - cursor;
         if (length == 0) {
